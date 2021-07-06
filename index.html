@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đơn giản</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Tahoma;
+        }
+
+        .main-form {
+            width: 60%;
+            border: solid red 1px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: bolder;
+            color: #fff;
+            background-color: red;
+            margin: 0;
+        }
+
+        .user {
+            margin-top: 16px;
+        }
+
+        .user table {
+            width: 50%;
+            /*display: flex;*/
+            /*justify-content: center;*/
+            margin: 0 auto;
+        }
+
+        .user span {
+            color: blue;
+        }
+
+        .like {
+            position: relative;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .like span {
+            position: absolute;
+            left: 12px;
+            top: 2px;
+            color: blue;
+        }
+
+        .like table{
+            width: 70%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .submit {
+            margin-bottom: 12px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main-form">
+    <h2>SỞ THÍCH CỦA BẠN</h2>
+    <form action="" method="">
+        <div class="user">
+            <table>
+                <tr>
+                    <td><span>Họ và tên</span></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                    <td><span>Email</span></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="like">
+            <span>Sở thích</span>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="sport">Thể thao</td>
+                    <td><input type="checkbox" name="music">Âm nhạc</td>
+                    <td><input type="checkbox" name="read-book">Đọc sách</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="web">Lướt web</td>
+                    <td><input type="checkbox" name="play-game">Chơi game</td>
+                    <td><input type="checkbox" name="movie">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="travel">Du lịch</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="submit">
+            <input type="submit" name="submit" value="Gửi thông tin">
+            <input type="reset" name="reset" value="Nhập lại">
+        </div>
+    </form>
+</div>
+</body>
+</html>
